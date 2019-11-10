@@ -68,14 +68,14 @@ public class UIManager : MonoBehaviour {
     {
         if (Managers.Game.isGameActive)
         {
-            mainMenu.layout.spacing = 20;
-            mainMenu.layout.padding.left = mainMenu.layout.padding.right = 200;
+            /*mainMenu.layout.spacing = 20;
+            mainMenu.layout.padding.left = mainMenu.layout.padding.right = 200;*/
             mainMenu.restartButton.SetActive(true);
         }
         else
         {
-            mainMenu.layout.spacing = 50;
-            mainMenu.layout.padding.left = mainMenu.layout.padding.right = 250;
+            /*mainMenu.layout.spacing = 50;
+            mainMenu.layout.padding.left = mainMenu.layout.padding.right = 250;*/
             mainMenu.restartButton.SetActive(false);
         }
     }

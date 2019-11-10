@@ -1,16 +1,4 @@
-﻿//  /*********************************************************************************
-//   *********************************************************************************
-//   *********************************************************************************
-//   * Produced by Skard Games										                  *
-//   * Facebook: https://goo.gl/5YSrKw											      *
-//   * Contact me: https://goo.gl/y5awt4								              *											
-//   * Developed by Cavit Baturalp Gürdin: https://tr.linkedin.com/in/baturalpgurdin *
-//   *********************************************************************************
-//   *********************************************************************************
-//   *********************************************************************************/
-
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(GameManager))]
 [RequireComponent(typeof(GridManager))]
@@ -18,8 +6,6 @@ using System.Collections;
 [RequireComponent(typeof(AudioManager))]
 [RequireComponent(typeof(ScoreManager))]
 [RequireComponent(typeof(PlayerInputManager))]
-[RequireComponent(typeof(AnalyticsManager))]
-[RequireComponent(typeof(AdvertisementManager))]
 [RequireComponent(typeof(SpawnManager))]
 [RequireComponent(typeof(ColorManager))]
 public class Managers : MonoBehaviour
