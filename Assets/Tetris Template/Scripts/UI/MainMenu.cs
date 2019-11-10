@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject menuButtons;
     public GameObject restartButton;
+    public TMPro.TextMeshProUGUI _text;
 
     void Awake()
     {
@@ -48,6 +49,14 @@ public class MainMenu : MonoBehaviour
         menuButtons.GetComponent<RectTransform>().DOAnchorPosY(-1450, 0.3f, true);
     }
 
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SpawnManager.dtfMode = !SpawnManager.dtfMode;
+            var onOff = SpawnManager.dtfMode ? "OFF" : "ON";
+            _text.text = $"Press SPACE to turn {onOff} DTF Mode";
+        }
+    }
 }
 

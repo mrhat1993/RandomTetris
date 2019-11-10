@@ -81,10 +81,10 @@ public class Managers : MonoBehaviour
 
     void Update()
     {
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Space))
-        {
-            cnt++;
-            ScreenCapture.CaptureScreenshot("ScreenShots/"+cnt.ToString() + ".png");
-        }
+        //if (UnityEngine.Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    cnt++;
+        //    ScreenCapture.CaptureScreenshot("ScreenShots/"+cnt.ToString() + ".png");
+        //}
     }
 }

@@ -11,17 +11,33 @@ public class SpawnManager : MonoBehaviour
     public GameObject blockPrefab;
     public GameObject emptyShapePrefab;
 
+    public static bool dtfMode = false;
+    public GameObject[] dtfShapes;
+    private int curIndex = 0;
+
     public void Spawn()
 	{
-		/*var i = Random.Range(0, shapeTypes.Length);
+        /*var i = Random.Range(0, shapeTypes.Length);
 
 		// Spawn Group at current Position
 		var temp = GenerateShape(Random.Range(1,7));//Instantiate(shapeTypes[i]);
 		Managers.Game.currentShape = temp.GetComponent<TetrisShape>();
 		temp.transform.parent = Managers.Game.blockHolder;
 		Managers.Input.isActive = true;*/
-		
-		GenerateNewShape();
+
+        if (dtfMode)
+        {
+            var shape = Instantiate(dtfShapes[Random.Range(0,dtfShapes.Length)]);
+            var shapeComponent = shape.GetComponent<TetrisShape>();
+            Managers.Game.currentShape = shapeComponent;
+            shapeComponent.transform.parent = Managers.Game.blockHolder;
+            //curIndex = (curIndex + 1) % dtfShapes.Length;
+        }
+        else
+        {
+            if (Random.value > 0.3f) GenerateNewShape();
+            else GenerateShape(Random.Range(0, 8));
+        }
         Managers.Input.isActive = true;
     }
 
@@ -70,7 +86,7 @@ public class SpawnManager : MonoBehaviour
 	    bool EmptyInMatrix((float, float) checkPos) => !matrix.Contains(checkPos);
     }
 
-    public TetrisShape GenerateShape(int blocksCount)
+    public void GenerateShape(int blocksCount)
     {
         var shapeMatrixWidth = 5;
         var shapeMatrixHeight = 5;
@@ -195,6 +211,8 @@ public class SpawnManager : MonoBehaviour
         var pivot = shape.transform.Find("Pivot");
         pivot.localPosition = new Vector3(Mathf.RoundToInt((shapeMatrix.Count - 1) / 2), Mathf.RoundToInt((shapeMatrix[0].Count - 1) / 2));
 
-        return shape.GetComponent<TetrisShape>();
+        var shapeComponent = shape.GetComponent<TetrisShape>();
+        Managers.Game.currentShape = shapeComponent;
+        shapeComponent.transform.parent = Managers.Game.blockHolder;
     }
 }
