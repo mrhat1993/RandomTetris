@@ -18,8 +18,6 @@ using System.Collections;
 [RequireComponent(typeof(AudioManager))]
 [RequireComponent(typeof(ScoreManager))]
 [RequireComponent(typeof(PlayerInputManager))]
-[RequireComponent(typeof(AnalyticsManager))]
-[RequireComponent(typeof(AdvertisementManager))]
 [RequireComponent(typeof(SpawnManager))]
 [RequireComponent(typeof(ColorManager))]
 public class Managers : MonoBehaviour
@@ -54,18 +52,6 @@ public class Managers : MonoBehaviour
 		get { return _inputManager; }
 	}
 
-	private static AdvertisementManager _advertisementManager;
-	public static AdvertisementManager Adv
-	{
-		get { return _advertisementManager; }
-	}
-
-	private static AnalyticsManager _analyticManager;
-	public static AnalyticsManager Anal
-	{
-		get { return _analyticManager; }
-	}
-
 	private static CameraManager _cameraManager;
 	public static CameraManager Cam
 	{
@@ -96,8 +82,6 @@ public class Managers : MonoBehaviour
 		_audioManager = GetComponent<AudioManager>();
 		_scoreManager = GetComponent<ScoreManager> ();
 		_inputManager = GetComponent<PlayerInputManager> ();
-		_advertisementManager = GetComponent<AdvertisementManager> ();
-		_analyticManager = GetComponent<AnalyticsManager> ();
 		_cameraManager = GetComponent<CameraManager> ();
 		_gridManager = GetComponent<GridManager> ();
 		_spawnManager = GetComponent<SpawnManager> ();

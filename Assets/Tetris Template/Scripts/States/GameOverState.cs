@@ -17,7 +17,6 @@ public class GameOverState : _StatesBase {
 
 	public override void OnDeactivate ()
     {
-        Managers.Adv.ShowRewardedAd();
         Debug.Log ("<color=red>Game Over State</color> OnDeactivate");
 	}
 
