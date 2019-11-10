@@ -24,7 +24,7 @@ public class GamePlayState : _StatesBase {
 	public override void OnUpdate ()
 	{
         if(Managers.Game.currentShape!=null)
-            Managers.Game.currentShape.MovementController.ShapeUpdate();
+	        Managers.Game.currentShape.MovementController.ShapeUpdate();
 		Debug.Log ("<color=yellow>Gameplay State</color> OnUpdate");
 	}
 	#endregion
