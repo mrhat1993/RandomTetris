@@ -27,8 +27,6 @@
               <e p="TetrisShape.cs" t="Include" />
             </e>
             <e p="Managers" t="Include">
-              <e p="AdvertisementManager.cs" t="Include" />
-              <e p="AnalyticsManager.cs" t="Include" />
               <e p="AudioManager.cs" t="Include" />
               <e p="CameraManager.cs" t="Include" />
               <e p="ColorManager.cs" t="Include" />
@@ -47,7 +45,6 @@
               <e p="MenuState.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
-              <e p="AdButtons.cs" t="Include" />
               <e p="Buttons" t="Include">
                 <e p="ContinueButton.cs" t="Include" />
                 <e p="GameBackButton.cs" t="Include" />

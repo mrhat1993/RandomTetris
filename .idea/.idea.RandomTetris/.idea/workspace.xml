@@ -13,17 +13,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/Managers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/States/GameOverState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/States/GamePlayState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/States/_StatesBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Gameplay/ShapeMovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/UI/InGameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Gameplay/TetrisShape.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/Managers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Assets/Scripts/Figure.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/States/GameOverState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -33,6 +34,9 @@
         <option value="$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/Managers.cs" />
         <option value="$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Tetris Template/Scripts/UI/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tetris Template/Scripts/UI/InGameUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tetris Template/Scripts/Gameplay/TetrisShape.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tetris Template/Scripts/Managers/SpawnManager.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573372242471</updated>
-      <workItem from="1573372250407" duration="2862000" />
+      <workItem from="1573372250407" duration="10487000" />
     </task>
     <servers />
   </component>

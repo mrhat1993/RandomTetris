@@ -19,12 +19,11 @@ public class TetrisShape : MonoBehaviour
     [HideInInspector]
     public ShapeType type;
 
-    [HideInInspector]
-    public ShapeMovementController movementController;
+    private ShapeMovementController _movementController;
+    public ShapeMovementController MovementController => _movementController ? _movementController : _movementController = GetComponent<ShapeMovementController>();
 
     void Awake()
     {
-        movementController = GetComponent<ShapeMovementController>();
         AssignRandomColor();
     }
 

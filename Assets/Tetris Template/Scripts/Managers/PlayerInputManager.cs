@@ -46,20 +46,20 @@ public class PlayerInputManager : MonoBehaviour
     void KeyboardInput()
     {
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.UpArrow))
-            Managers.Game.currentShape.movementController.RotateClockWise(false);
+            Managers.Game.currentShape.MovementController.RotateClockWise(false);
         else if (Input.GetKeyDown(KeyCode.D))
-            Managers.Game.currentShape.movementController.RotateClockWise(true);
+            Managers.Game.currentShape.MovementController.RotateClockWise(true);
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
-            Managers.Game.currentShape.movementController.MoveHorizontal(Vector2.left);
+            Managers.Game.currentShape.MovementController.MoveHorizontal(Vector2.left);
         else if (Input.GetKeyDown(KeyCode.RightArrow))
-            Managers.Game.currentShape.movementController.MoveHorizontal(Vector2.right);
+            Managers.Game.currentShape.MovementController.MoveHorizontal(Vector2.right);
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (Managers.Game.currentShape != null)
             {
                 isActive = false;
-                Managers.Game.currentShape.movementController.InstantFall();
+                Managers.Game.currentShape.MovementController.InstantFall();
             }
         }
     }
@@ -97,12 +97,12 @@ public class PlayerInputManager : MonoBehaviour
                 //swipe left
                 if (_currentSwipe.x < 0 && _currentSwipe.y > -0.5f && _currentSwipe.y < 0.5f)
                 {
-                    Managers.Game.currentShape.movementController.MoveHorizontal(Vector2.left);
+                    Managers.Game.currentShape.MovementController.MoveHorizontal(Vector2.left);
                 }
                 //swipe right
                 if (_currentSwipe.x > 0 && _currentSwipe.y > -0.5f && _currentSwipe.y < 0.5f)
                 {
-                    Managers.Game.currentShape.movementController.MoveHorizontal(Vector2.right);
+                    Managers.Game.currentShape.MovementController.MoveHorizontal(Vector2.right);
                 }
 
                 //swipe down
@@ -111,16 +111,16 @@ public class PlayerInputManager : MonoBehaviour
                     if (Managers.Game.currentShape != null)
                     {
                         isActive = false;
-                        Managers.Game.currentShape.movementController.InstantFall();
+                        Managers.Game.currentShape.MovementController.InstantFall();
                     }
                 }
             }
             else
             {
                 if (_startPressPosition.x < Screen.width / 2)
-                    Managers.Game.currentShape.movementController.RotateClockWise(false);
+                    Managers.Game.currentShape.MovementController.RotateClockWise(false);
                 else
-                    Managers.Game.currentShape.movementController.RotateClockWise(true);
+                    Managers.Game.currentShape.MovementController.RotateClockWise(true);
             }
         }
     }
@@ -158,12 +158,12 @@ public class PlayerInputManager : MonoBehaviour
                     //swipe left
                     if (_currentSwipe.x < 0 && _currentSwipe.y > -0.5f && _currentSwipe.y < 0.5f)
                     {
-                        Managers.Game.currentShape.movementController.MoveHorizontal(Vector2.left);
+                        Managers.Game.currentShape.MovementController.MoveHorizontal(Vector2.left);
                     }
                     //swipe right
                     if (_currentSwipe.x > 0 && _currentSwipe.y > -0.5f && _currentSwipe.y < 0.5f)
                     {
-                        Managers.Game.currentShape.movementController.MoveHorizontal(Vector2.right);
+                        Managers.Game.currentShape.MovementController.MoveHorizontal(Vector2.right);
                     }
 
                     //swipe down
@@ -172,16 +172,16 @@ public class PlayerInputManager : MonoBehaviour
                         if (Managers.Game.currentShape != null)
                         {
                             isActive = false;
-                            Managers.Game.currentShape.movementController.InstantFall();
+                            Managers.Game.currentShape.MovementController.InstantFall();
                         }
                     }
                 }
                 else /*if (_currentSwipe.x + _currentSwipe.y< 0.5f */
                 {
                     if (_startPressPosition.x < Screen.width / 2)
-                        Managers.Game.currentShape.movementController.RotateClockWise(false);
+                        Managers.Game.currentShape.MovementController.RotateClockWise(false);
                     else
-                        Managers.Game.currentShape.movementController.RotateClockWise(true);
+                        Managers.Game.currentShape.MovementController.RotateClockWise(true);
                 }
             }
         }
