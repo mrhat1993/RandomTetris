@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Unity Projects\RandomTetris" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Assets" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Figure.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Tetris Template" t="Include">
+          <e p="Editor" t="Include">
+            <e p="WelcomeInfo.cs" t="Include" />
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="3rd Party" t="Include">
+              <e p="DOTween" t="Include">
+                <e p="DOTween43.xml" t="Include" />
+                <e p="DOTween46.xml" t="Include" />
+                <e p="DOTween50.xml" t="Include" />
+                <e p="readme.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Gameplay" t="Include">
+              <e p="ShapeMovementController.cs" t="Include" />
+              <e p="TetrisShape.cs" t="Include" />
+            </e>
+            <e p="Managers" t="Include">
+              <e p="AdvertisementManager.cs" t="Include" />
+              <e p="AnalyticsManager.cs" t="Include" />
+              <e p="AudioManager.cs" t="Include" />
+              <e p="CameraManager.cs" t="Include" />
+              <e p="ColorManager.cs" t="Include" />
+              <e p="GameManager.cs" t="Include" />
+              <e p="GridManager.cs" t="Include" />
+              <e p="Managers.cs" t="Include" />
+              <e p="PlayerInputManager.cs" t="Include" />
+              <e p="ScoreManager.cs" t="Include" />
+              <e p="SpawnManager.cs" t="Include" />
+              <e p="UIManager.cs" t="Include" />
+            </e>
+            <e p="States" t="Include">
+              <e p="_StatesBase.cs" t="Include" />
+              <e p="GameOverState.cs" t="Include" />
+              <e p="GamePlayState.cs" t="Include" />
+              <e p="MenuState.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="AdButtons.cs" t="Include" />
+              <e p="Buttons" t="Include">
+                <e p="ContinueButton.cs" t="Include" />
+                <e p="GameBackButton.cs" t="Include" />
+                <e p="PlayerStatsButton.cs" t="Include" />
+                <e p="RestartButton.cs" t="Include" />
+                <e p="SettingsButton.cs" t="Include" />
+              </e>
+              <e p="GameOverPopUp.cs" t="Include" />
+              <e p="InGameUI.cs" t="Include" />
+              <e p="MainMenu.cs" t="Include" />
+              <e p="PopUp.cs" t="Include" />
+              <e p="SettingsMenu.cs" t="Include" />
+              <e p="StatsUI.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="CameraShake.cs" t="Include" />
+              <e p="Constants.cs" t="Include" />
+              <e p="PersistentSingleton.cs" t="Include" />
+              <e p="PlayerStats.cs" t="Include" />
+              <e p="ScriptableObjectUtility.cs" t="Include" />
+              <e p="TimeUtil.cs" t="Include" />
+              <e p="Vector2Extension.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="RandomTetris.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\snake\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\snake\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RandomTetris.867979870.00" t="ExcludeRecursive" />
+  </component>
+</project>

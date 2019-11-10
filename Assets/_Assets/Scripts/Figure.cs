@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Figure : MonoBehaviour
+namespace TetrisHack
 {
-    public List<Figure> _figures = new List<Figure>();
+    public class Figure : MonoBehaviour
+    {
+        public List<Figure> _figures = new List<Figure>();
+    }
 }

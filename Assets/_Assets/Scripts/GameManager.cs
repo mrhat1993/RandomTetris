@@ -1,20 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace TetrisHack
 {
-    [SerializeField] private Figure _figurePrefab;
-
-    private void SpawnFigure()
+    public class GameManager : MonoBehaviour
     {
-        var newFigure = CreateFigure(1);
-        
-    }
+        [SerializeField] private Figure _figurePrefab;
 
-    private Figure CreateFigure(int blocksCount = 1)
-    {
-        var newFigure = Instantiate(_figurePrefab);
-        return newFigure;
+        private void SpawnFigure()
+        {
+            var newFigure = CreateFigure(1);
+
+        }
+
+        private Figure CreateFigure(int blocksCount = 1)
+        {
+            var newFigure = Instantiate(_figurePrefab);
+            return newFigure;
+        }
     }
 }
